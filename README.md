@@ -1,5 +1,6 @@
 # Ecommerce-project---Store | Swift | Swift UI
 A modern iOS e-commerce app built with SwiftUI, showcasing a fully functional product listing with in-app purchases powered by StoreKit.
+![Main](https://github.com/user-attachments/assets/2247e7b4-7a26-46ce-9b90-b3924bd7b4bf)
 
 Features
 🛒 Product Listing: Fetches products from a mock API and displays them in a beautifully adaptive grid layout.
