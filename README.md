@@ -31,11 +31,10 @@ View: ProductListView is a SwiftUI view displaying the UI, observing the ViewMod
 
 Services: ApiService handles product fetching, while PurchaseManager wraps StoreKit interactions.
 
+NetworkMonitor: Singleton observing network connectivity changes using NWPathMonitor with Combine publishers.
 
-Networ![Mainx](https://github.com/user-attachments/assets/3b09a557-3bec-4c92-9f0f-f72be0466ef5)
 
-
-kMonitor: Singleton observing network connectivity changes using NWPathMonitor with Combine publishers.
+![Mainx](https://github.com/user-attachments/assets/3b09a557-3bec-4c92-9f0f-f72be0466ef5)
 
 
 How to Run
