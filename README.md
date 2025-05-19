@@ -53,3 +53,7 @@ Dependencies
 Uses Combine and Swift Concurrency for reactive and async code.
 
 No external dependencies — lightweight and pure Swift.
+
+
+![MainSS](https://github.com/user-attachments/assets/c50310a5-9bdb-4b66-9879-77ca0241e582)
+
