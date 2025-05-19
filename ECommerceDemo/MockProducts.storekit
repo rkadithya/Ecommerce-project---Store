@@ -1,0 +1,377 @@
+{
+  "appPolicies" : {
+    "eula" : "",
+    "policies" : [
+      {
+        "locale" : "en_US",
+        "policyText" : "",
+        "policyURL" : ""
+      }
+    ]
+  },
+  "identifier" : "26083916",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "109.95",
+      "familyShareable" : false,
+      "internalID" : "E5B2E9C3",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.mockapp.product1",
+      "referenceName" : "Mock Premium Item 1",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "22.3",
+      "familyShareable" : false,
+      "internalID" : "90486418",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.mockapp.product2",
+      "referenceName" : "Mock Premium Item 2",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "55.99",
+      "familyShareable" : false,
+      "internalID" : "BFD8C55E",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.mockapp.product3",
+      "referenceName" : "Mock Premium Item 3",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "15.99",
+      "familyShareable" : false,
+      "internalID" : "887D56A1",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.mockapp.product4",
+      "referenceName" : "Mock Premium Item 4",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "695",
+      "familyShareable" : false,
+      "internalID" : "AFE410F2",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.mockapp.product5",
+      "referenceName" : "Mock Premium Item 5",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "168",
+      "familyShareable" : false,
+      "internalID" : "10FCE807",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.mockapp.product6",
+      "referenceName" : "Mock Premium Item 6",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "9.99",
+      "familyShareable" : false,
+      "internalID" : "4D402D3D",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.mockapp.product7",
+      "referenceName" : "Mock Premium Item 7",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "10.99",
+      "familyShareable" : false,
+      "internalID" : "CB12E6A7",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.mockapp.product8",
+      "referenceName" : "Mock Premium Item 8",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "64",
+      "familyShareable" : false,
+      "internalID" : "E64E8892",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.mockapp.product9",
+      "referenceName" : "Mock Premium Item 9",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "109",
+      "familyShareable" : false,
+      "internalID" : "2583A2E7",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.mockapp.product10",
+      "referenceName" : "Mock Premium Item 10",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "109",
+      "familyShareable" : false,
+      "internalID" : "5855A22C",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.mockapp.product11",
+      "referenceName" : "Mock Premium Item 11",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "114",
+      "familyShareable" : false,
+      "internalID" : "22186506",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.mockapp.product12",
+      "referenceName" : "Mock Premium Item 12",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "599",
+      "familyShareable" : false,
+      "internalID" : "D89CD56E",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.mockapp.product13",
+      "referenceName" : "Mock Premium Item 13",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "999.99",
+      "familyShareable" : false,
+      "internalID" : "81ED11D4",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.mockapp.product14",
+      "referenceName" : "Mock Premium Item 14",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "56.99",
+      "familyShareable" : false,
+      "internalID" : "A6EECD88",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.mockapp.product14.copy",
+      "referenceName" : "Mock Premium Item 15",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "29.95",
+      "familyShareable" : false,
+      "internalID" : "EBE12644",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.mockapp.product16",
+      "referenceName" : "Mock Premium Item 16",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "39.99",
+      "familyShareable" : false,
+      "internalID" : "E2EEC8AE",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.mockapp.product17",
+      "referenceName" : "Mock Premium Item 17",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "9.85",
+      "familyShareable" : false,
+      "internalID" : "5DA0D2B1",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.mockapp.product18",
+      "referenceName" : "Mock Premium Item 18",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "7.95",
+      "familyShareable" : false,
+      "internalID" : "89309015",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.mockapp.product19",
+      "referenceName" : "Mock Premium Item 19",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "12.99",
+      "familyShareable" : false,
+      "internalID" : "3C464BAB",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.mockapp.product20",
+      "referenceName" : "Mock Premium Item 20",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+    "_failTransactionsEnabled" : false,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Load Products"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Purchase"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Verification"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Store Sync"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Subscription Status"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Transaction"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Manage Subscriptions Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Refund Request Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Offer Code Redeem Sheet"
+      }
+    ]
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 4,
+    "minor" : 0
+  }
+}
