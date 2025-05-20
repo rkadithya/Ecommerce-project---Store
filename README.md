@@ -1,4 +1,4 @@
-# Ecommerce-project - Store | Swift | Swift UI | MVVM | Combine | Dependency injection
+#Store - A Ecommerce-project| Swift | Swift UI | MVVM | Combine | Dependency injection
 A modern iOS e-commerce app built with SwiftUI, showcasing a fully functional product listing with in-app purchases powered by StoreKit.
 
 
