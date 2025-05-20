@@ -1,59 +1,94 @@
-#Store - A Ecommerce-project| Swift | Swift UI | MVVM | Combine | Dependency injection
-A modern iOS e-commerce app built with SwiftUI, showcasing a fully functional product listing with in-app purchases powered by StoreKit.
+# 🛍️ Store - A Modern E-Commerce iOS App  
+Built with **Swift** • **SwiftUI** • **MVVM** • **Combine** • **Dependency Injection**
 
+A sleek and performant iOS e-commerce app built using modern Apple technologies. Showcases a fully functional product listing interface with simulated in-app purchases powered by **StoreKit**.
 
 ![Main](https://github.com/user-attachments/assets/2247e7b4-7a26-46ce-9b90-b3924bd7b4bf)
 
-Features
-🛒 Product Listing: Fetches products from a mock API and displays them in a beautifully adaptive grid layout.
+---
 
-🛍️ Mock StoreKit Integration: Simulates in-app purchases with a custom PurchaseManager, integrating real StoreKit products alongside API data.
+## 🚀 Features
 
-🧩 Dependency Injection: Clean, testable code architecture with injected API services for flexibility and easier unit testing.
+- **🛒 Product Listing**  
+  Fetches products from a mock API and displays them in a beautifully adaptive grid layout.
 
-📱 MVVM Architecture: Robust separation of concerns using ViewModel to manage business logic and state, keeping SwiftUI views declarative and simple.
+- **🛍️ StoreKit Integration (Mock)
+Simulates in-app purchases using a custom PurchaseManager, mimicking StoreKit behavior alongside API data.
 
-⚡ Combine Framework: Reactive programming to handle asynchronous API calls, network state changes, and user input seamlessly.
+⚠️ Note: StoreKit functionality is mocked for demonstration purposes, as the project was developed without an active Apple Developer certificate.
 
-🔍 Search & Filter: Real-time product filtering with a searchable interface powered by @Published properties and SwiftUI’s .searchable.
+- **📦 Modular Network Monitoring**  
+  Integrated a **custom `NetworkMonitorKit` Swift package** for reusable, observable network status tracking across the app.
 
-🌐 Network Connectivity Monitoring: Live network status tracking with auto-fetch when the connection is restored, enhancing user experience during offline/online transitions.
+- **🧩 Dependency Injection**  
+  Clean and testable code architecture with injected API services for better flexibility and unit testing.
 
-🏗️ Swift & SwiftUI: Fully built in Swift with SwiftUI views for a modern, performant, and maintainable app.
+- **📱 MVVM Architecture**  
+  Strong separation of concerns — the ViewModel handles logic and state while SwiftUI views remain declarative and reactive.
 
+- **⚡ Combine Framework**  
+  Manages API calls, user input, and network status changes using reactive publishers.
 
-Architecture Overview
-Model: Product represents product data from the API.
+- **🔍 Search & Filter**  
+  Real-time filtering with SwiftUI's `.searchable` modifier and `@Published` bindings.
 
-ViewModel: ProductListViewModel handles fetching products, StoreKit product loading, purchase state, filtering, and network state.
+- **🌐 Offline Detection & Recovery**  
+  Live network state monitoring. Automatically re-fetches data once the internet connection is restored.
 
-View: ProductListView is a SwiftUI view displaying the UI, observing the ViewModel’s state and responding to user actions like pull-to-refresh and search.
+- **🌙 Dark Mode Supported**  
+  Full support for system-wide light/dark appearance settings using SwiftUI theming.
 
-Services: ApiService handles product fetching, while PurchaseManager wraps StoreKit interactions.
+- **🏗️ Pure SwiftUI**  
+  Built entirely in Swift, using native SwiftUI components for maintainability and modern UI responsiveness.
 
-NetworkMonitor: Singleton observing network connectivity changes using NWPathMonitor with Combine publishers.
+---
 
+## 🧠 Architecture Overview
+
+### 🧩 Model  
+Represents product data fetched from the API.
+
+### 🧠 ViewModel  
+`ProductListViewModel`:
+- Fetches product data
+- Loads StoreKit products
+- Handles purchases
+- Filters based on search
+- Tracks network status
+
+### 👁 View  
+SwiftUI views (like `ProductListView`) observe the ViewModel, display the UI, and respond to actions like search and pull-to-refresh.
+
+### ⚙️ Services  
+- `ApiService`: Fetches product data from API  
+- `PurchaseManager`: Wraps mock StoreKit logic  
+- `NetworkMonitor`: Provided by the custom `NetworkMonitorKit` framework for connectivity awareness
+
+---
 
 ![Mainx](https://github.com/user-attachments/assets/3b09a557-3bec-4c92-9f0f-f72be0466ef5)
 
+---
 
-How to Run
-Clone this repo.
+## 🛠️ How to Run
 
-Open ECommerceDemo.xcodeproj in Xcode 14+.
+1. Clone this repo.
+2. Open `ECommerceDemo.xcodeproj` in **Xcode 14+**
+3. Build and run on an iOS 15+ simulator or device.
+4. Pull to refresh product listings.
+5. Toggle network connection to simulate offline mode.
+6. Try purchasing a product to test mock StoreKit flow.
 
-Build and run on iOS 15+ simulator or device.
+---
 
-Pull to refresh to fetch products, test offline mode by toggling network connection.
+## 📦 Dependencies
 
-Try purchasing products to simulate StoreKit transactions.
+- Uses native Apple frameworks:
+  - **Combine** for reactive streams
+  - **Swift Concurrency** (async/await)
+- ✅ **No third-party dependencies** — lightweight and pure Swift
+- ✅ **Custom `NetworkMonitorKit`** framework included for reusable network logic
 
-
-Dependencies
-Uses Combine and Swift Concurrency for reactive and async code.
-
-No external dependencies — lightweight and pure Swift.
-
+---
 
 ![MainSS](https://github.com/user-attachments/assets/c50310a5-9bdb-4b66-9879-77ca0241e582)
-
