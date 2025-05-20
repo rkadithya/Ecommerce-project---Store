@@ -11,7 +11,7 @@ import StoreKit
 @MainActor
 class PurchaseManager: ObservableObject {
     @Published var storeKitProducts: [StoreKit.Product] = []
-    @Published var purchasedProductIDs: Set<String> = []
+    @Published private(set) var purchasedProductIDs: Set<String> = []
     @Published var error: Error?
 
     static let shared = PurchaseManager()
@@ -48,27 +48,56 @@ class PurchaseManager: ObservableObject {
         }
     }
 
-    func purchase(_ product: StoreKit.Product) async {
+    @MainActor
+    func purchase(_ product: StoreKit.Product) async -> Bool {
         do {
             let result = try await product.purchase()
+            
             switch result {
             case .success(let verification):
-                let transaction = try checkVerified(verification)
-                await transaction.finish()
-                purchasedProductIDs.insert(transaction.productID)
+                switch verification {
+                case .verified(let transaction):
+                    print("✅ Purchase successful: \(transaction.productID)")
+                    await transaction.finish()
+                    
+                    // ✅ Trigger refresh
+                    await loadPurchasedProducts() 
+                    
+                    return true
+                case .unverified(_, let error):
+                    print("⚠️ Unverified purchase: \(error.localizedDescription)")
+                    return false
+                }
             case .userCancelled:
-                print("User cancelled.")
+                print("❌ Purchase cancelled by user")
+                return false
             case .pending:
-                print("Purchase pending.")
+                print("⏳ Purchase pending approval")
+                return false
             @unknown default:
-                break
+                return false
             }
         } catch {
-            print("Purchase error: \(error)")
-            self.error = error
+            print("❌ Purchase failed: \(error.localizedDescription)")
+            return false
         }
     }
 
+
+    @MainActor
+    func loadPurchasedProducts() async {
+        var purchased = Set<String>()
+
+        for await result in Transaction.currentEntitlements {
+            if case .verified(let transaction) = result {
+                purchased.insert(transaction.productID)
+            }
+        }
+
+        purchasedProductIDs = purchased
+    }
+
+    
     private func checkVerified<T>(_ result: VerificationResult<T>) throws -> T {
         switch result {
         case .unverified(_, let error): throw error
@@ -87,7 +116,8 @@ class PurchaseManager: ObservableObject {
         }
     }
 
-    func isPurchased(_ storeKitProduct: StoreKit.Product) -> Bool {
-        return purchasedProductIDs.contains(storeKitProduct.id)
+    func isPurchased(_ product : StoreKit.Product) -> Bool {
+        purchasedProductIDs.contains(product.id)
     }
+
 }

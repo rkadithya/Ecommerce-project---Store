@@ -13,6 +13,8 @@ protocol ApiServiceProtocol{
 }
 
 class ApiService : ApiServiceProtocol{
+    static let shared = ApiService()
+
     let url = "https://fakestoreapi.com/products"
     
     func fetchProducts() -> AnyPublisher<[Product], any Error> {
@@ -26,11 +28,4 @@ class ApiService : ApiServiceProtocol{
             .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
     }
-    
-    
-    static let shared = ApiService()
-    
-    
-    
-    
 }

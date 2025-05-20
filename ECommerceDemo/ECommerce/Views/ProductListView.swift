@@ -38,7 +38,7 @@ struct ProductListView: View {
                 }
             }
             .refreshable {
-                viewModel.fetchProducts()
+                viewModel.fetchProducts(force: true)
             }
             .navigationTitle("Products")
             .searchable(text: $viewModel.searchText, prompt: "Search products")

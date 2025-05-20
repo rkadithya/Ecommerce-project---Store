@@ -11,7 +11,10 @@ import StoreKit
 struct ProductDetailView: View {
     let product: Product
     @ObservedObject var purchaseManager = PurchaseManager.shared
-    @State private var showConfirmation = false
+
+    @State private var showSuccessAlert = false
+    @State private var showErrorAlert = false
+    @State private var errorMessage = ""
 
     var body: some View {
         ScrollView {
@@ -34,7 +37,7 @@ struct ProductDetailView: View {
                 .padding(.horizontal)
 
                 // Product Info
-                VStack( alignment: .center, spacing: 12) {
+                VStack(alignment: .center, spacing: 12) {
                     Text(product.title)
                         .font(.title2)
                         .multilineTextAlignment(.center)
@@ -56,8 +59,6 @@ struct ProductDetailView: View {
 
                 // Purchase Info
                 VStack(spacing: 10) {
-               
-
                     if let storeKitProduct = purchaseManager.storeKitProducts.first(where: {
                         $0.id == "com.mockapp.product\(product.id)"
                     }) {
@@ -68,15 +69,18 @@ struct ProductDetailView: View {
                         } else {
                             Button("Buy for \(storeKitProduct.displayPrice)") {
                                 Task {
-                                    await purchaseManager.purchase(storeKitProduct)
-                                    showConfirmation = true
+                                    let success = await purchaseManager.purchase(storeKitProduct)
+                                    if success {
+                                        showSuccessAlert = true
+                                    } else {
+                                        // Optional: show error alert if needed
+                                        errorMessage = "Purchase failed or cancelled"
+                                        showErrorAlert = true
+                                    }
                                 }
                             }
                             .buttonStyle(.borderedProminent)
                             .controlSize(.large)
-                            .alert("Purchase Successful!", isPresented: $showConfirmation) {
-                                Button("OK", role: .cancel) {}
-                            }
                         }
                     } else {
                         Label("Not available for purchase", systemImage: "xmark.octagon.fill")
@@ -95,10 +99,24 @@ struct ProductDetailView: View {
                 await purchaseManager.loadProducts()
             }
         }
+        .alert("Purchase Successful!", isPresented: $showSuccessAlert) {
+            Button("OK", role: .cancel) {}
+        }
+        .alert("Purchase Failed", isPresented: $showErrorAlert) {
+            Button("OK", role: .cancel) {}
+        } message: {
+            Text(errorMessage)
+        }
     }
 }
 
-//For testing purpose
+// For preview
 #Preview {
-    ProductDetailView(product: Product(id: 1, title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops", price: 109.95, description: "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday", image: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"))
+    ProductDetailView(product: Product(
+        id: 1,
+        title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+        price: 109.95,
+        description: "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+        image: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+    ))
 }

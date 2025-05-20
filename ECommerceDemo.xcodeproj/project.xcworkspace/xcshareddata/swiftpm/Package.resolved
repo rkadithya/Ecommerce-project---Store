@@ -1,0 +1,15 @@
+{
+  "originHash" : "f6151bf2dff8c8bb7a7cdce77e4fc2535ec650af3ab0da38f9c96f90f3cac6dc",
+  "pins" : [
+    {
+      "identity" : "networkmonitorkitpro",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/rkadithya/NetworkMonitorKitPro",
+      "state" : {
+        "revision" : "9b7ce8b073ce8690742090c7985e242d4fd01c35",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 3
+}

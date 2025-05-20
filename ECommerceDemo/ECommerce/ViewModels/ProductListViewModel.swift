@@ -5,17 +5,11 @@
 //  Created by RK Adithya on 18/05/25.
 //
 
-
-//
-//  ProductListViewModel.swift
-//  ECommerceDemo
-//
-
 import Foundation
 import StoreKit
 import Combine
 import SwiftUI
-
+import NetworkMonitorKit
 @MainActor
 class ProductListViewModel: ObservableObject {
     
@@ -36,6 +30,7 @@ class ProductListViewModel: ObservableObject {
     // MARK: - Private
     private var cancellables = Set<AnyCancellable>()
     private var monitorCancellable: AnyCancellable?
+    private var hasFetchedProducts = false
 
     // MARK: - Dependencies
     let apiService: ApiServiceProtocol
@@ -59,19 +54,21 @@ class ProductListViewModel: ObservableObject {
     }
 
     // MARK: - Product Fetching
-    func fetchProducts() {
+    func fetchProducts(force: Bool = false) {
         guard isConnected else {
-            errorMessage = "No Internet Connection"
-            showNoNetworkAlert = true
+            self.errorMessage = "No Internet Connection"
+            self.showNoNetworkAlert = true
             return
+        }
+
+        guard !hasFetchedProducts || force else {
+            return // Prevent duplicate fetch unless forced
         }
 
         isLoading = true
         apiService.fetchProducts()
-            .sink(receiveCompletion: { [weak self] completion in
-                guard let self = self else { return }
+            .sink(receiveCompletion: { completion in
                 self.isLoading = false
-
                 switch completion {
                 case .failure(let error):
                     self.errorMessage = error.localizedDescription
@@ -86,6 +83,7 @@ class ProductListViewModel: ObservableObject {
                 self.errorMessage = nil
                 self.showNoNetworkAlert = false
                 self.products = value
+                self.hasFetchedProducts = true
 
                 Task {
                     await self.loadStoreKitProducts()
@@ -93,6 +91,7 @@ class ProductListViewModel: ObservableObject {
             })
             .store(in: &cancellables)
     }
+
 
     // MARK: - StoreKit
     func loadStoreKitProducts() async {

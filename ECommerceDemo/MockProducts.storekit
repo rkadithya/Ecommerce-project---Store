@@ -26,7 +26,7 @@
         }
       ],
       "productID" : "com.mockapp.product1",
-      "referenceName" : "Mock Premium Item 1",
+      "referenceName" : "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
       "type" : "NonConsumable"
     },
     {
@@ -41,7 +41,7 @@
         }
       ],
       "productID" : "com.mockapp.product2",
-      "referenceName" : "Mock Premium Item 2",
+      "referenceName" : "Mens Casual Premium Slim Fit T-Shirts ",
       "type" : "NonConsumable"
     },
     {
@@ -56,7 +56,7 @@
         }
       ],
       "productID" : "com.mockapp.product3",
-      "referenceName" : "Mock Premium Item 3",
+      "referenceName" : "Mens Cotton Jacket",
       "type" : "NonConsumable"
     },
     {
@@ -71,7 +71,7 @@
         }
       ],
       "productID" : "com.mockapp.product4",
-      "referenceName" : "Mock Premium Item 4",
+      "referenceName" : "Mens Casual Slim Fit",
       "type" : "NonConsumable"
     },
     {
@@ -86,7 +86,7 @@
         }
       ],
       "productID" : "com.mockapp.product5",
-      "referenceName" : "Mock Premium Item 5",
+      "referenceName" : "John Hardy Women's Legends Naga Gold & Silver Dragon Station Cha",
       "type" : "NonConsumable"
     },
     {
@@ -101,7 +101,7 @@
         }
       ],
       "productID" : "com.mockapp.product6",
-      "referenceName" : "Mock Premium Item 6",
+      "referenceName" : "Solid Gold Petite Micropave ",
       "type" : "NonConsumable"
     },
     {
@@ -116,7 +116,7 @@
         }
       ],
       "productID" : "com.mockapp.product7",
-      "referenceName" : "Mock Premium Item 7",
+      "referenceName" : "White Gold Plated Princess",
       "type" : "NonConsumable"
     },
     {
@@ -131,7 +131,7 @@
         }
       ],
       "productID" : "com.mockapp.product8",
-      "referenceName" : "Mock Premium Item 8",
+      "referenceName" : "Pierced Owl Rose Gold Plated Stainless Steel Double",
       "type" : "NonConsumable"
     },
     {
@@ -146,7 +146,7 @@
         }
       ],
       "productID" : "com.mockapp.product9",
-      "referenceName" : "Mock Premium Item 9",
+      "referenceName" : "WD 2TB Elements Portable External Hard Drive - USB 3.0 ",
       "type" : "NonConsumable"
     },
     {
@@ -161,7 +161,7 @@
         }
       ],
       "productID" : "com.mockapp.product10",
-      "referenceName" : "Mock Premium Item 10",
+      "referenceName" : "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
       "type" : "NonConsumable"
     },
     {
@@ -176,7 +176,7 @@
         }
       ],
       "productID" : "com.mockapp.product11",
-      "referenceName" : "Mock Premium Item 11",
+      "referenceName" : "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost ",
       "type" : "NonConsumable"
     },
     {
@@ -191,7 +191,7 @@
         }
       ],
       "productID" : "com.mockapp.product12",
-      "referenceName" : "Mock Premium Item 12",
+      "referenceName" : "WD 4TB Gaming Drive Works with Playstation 4 Portable External H",
       "type" : "NonConsumable"
     },
     {
@@ -206,7 +206,7 @@
         }
       ],
       "productID" : "com.mockapp.product13",
-      "referenceName" : "Mock Premium Item 13",
+      "referenceName" : "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
       "type" : "NonConsumable"
     },
     {
@@ -221,7 +221,7 @@
         }
       ],
       "productID" : "com.mockapp.product14",
-      "referenceName" : "Mock Premium Item 14",
+      "referenceName" : "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZ",
       "type" : "NonConsumable"
     },
     {
@@ -236,7 +236,7 @@
         }
       ],
       "productID" : "com.mockapp.product14.copy",
-      "referenceName" : "Mock Premium Item 15",
+      "referenceName" : "BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
       "type" : "NonConsumable"
     },
     {
@@ -251,7 +251,7 @@
         }
       ],
       "productID" : "com.mockapp.product16",
-      "referenceName" : "Mock Premium Item 16",
+      "referenceName" : "Lock and Love Women's Removable Hooded Faux Leather Moto Biker J",
       "type" : "NonConsumable"
     },
     {
@@ -266,7 +266,7 @@
         }
       ],
       "productID" : "com.mockapp.product17",
-      "referenceName" : "Mock Premium Item 17",
+      "referenceName" : "Rain Jacket Women Windbreaker Striped Climbing Raincoats",
       "type" : "NonConsumable"
     },
     {
@@ -281,7 +281,7 @@
         }
       ],
       "productID" : "com.mockapp.product18",
-      "referenceName" : "Mock Premium Item 18",
+      "referenceName" : "Rain Jacket Women Windbreaker Striped Climbing Raincoats",
       "type" : "NonConsumable"
     },
     {
@@ -296,7 +296,7 @@
         }
       ],
       "productID" : "com.mockapp.product19",
-      "referenceName" : "Mock Premium Item 19",
+      "referenceName" : "Opna Women's Short Sleeve Moisture",
       "type" : "NonConsumable"
     },
     {
@@ -311,7 +311,7 @@
         }
       ],
       "productID" : "com.mockapp.product20",
-      "referenceName" : "Mock Premium Item 20",
+      "referenceName" : "DANVOUY Womens T Shirt Casual Cotton Short",
       "type" : "NonConsumable"
     }
   ],
